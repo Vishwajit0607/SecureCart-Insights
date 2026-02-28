@@ -1,0 +1,81 @@
+userId,userName,userEmail,transactionId,date,type,amount,itemCategory,itemName,returnReason,daysOwned,receiptMatch
+USR-T100,Test User 0,test0@email.com,USR-T100-T1,2025-01-31,purchase,173.29,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T2,2025-02-03,return,173.29,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T3,2025-02-13,purchase,190.12,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T4,2025-02-14,return,190.12,Apparel,Test Apparel Item,Changed mind,1,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T5,2025-01-31,purchase,62.4,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T6,2025-02-03,return,62.4,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T7,2025-01-29,purchase,108.89,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T8,2025-01-30,return,108.89,Electronics,Test Electronics Item,Changed mind,1,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T9,2025-01-23,purchase,78.71,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T10,2025-01-26,return,78.71,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T11,2025-01-11,purchase,291.11,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T12,2025-01-14,return,291.11,Apparel,Test Apparel Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T13,2025-01-17,purchase,292.38,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T14,2025-01-19,return,292.38,Electronics,Test Electronics Item,Changed mind,2,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T15,2025-01-31,purchase,296.9,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T16,2025-02-03,return,296.9,Apparel,Test Apparel Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T17,2025-01-31,purchase,143.36,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T18,2025-02-03,return,143.36,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T19,2025-01-10,purchase,223.21,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T20,2025-01-12,return,223.21,Electronics,Test Electronics Item,Changed mind,2,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T21,2025-02-03,purchase,227.25,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T22,2025-02-06,return,227.25,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T23,2025-01-30,purchase,76.42,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T24,2025-01-31,return,76.42,Apparel,Test Apparel Item,Changed mind,1,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T25,2025-01-18,purchase,87.53,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T26,2025-01-21,return,87.53,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T27,2025-01-06,purchase,237.22,Electronics,Test Electronics Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T28,2025-01-09,return,237.22,Electronics,Test Electronics Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T29,2025-01-12,purchase,103.3,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T30,2025-01-15,return,103.3,Apparel,Test Apparel Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T31,2025-02-13,purchase,130.92,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T32,2025-02-14,return,130.92,Apparel,Test Apparel Item,Changed mind,1,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T33,2025-01-31,purchase,140.32,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T34,2025-02-03,return,140.32,Apparel,Test Apparel Item,Changed mind,3,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T35,2025-01-05,purchase,142.18,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T36,2025-01-07,return,142.18,Apparel,Test Apparel Item,Changed mind,2,true
+USR-T100,Test User 0,test0@email.com,USR-T100-T37,2025-01-21,purchase,208.71,Apparel,Test Apparel Item,,,
+USR-T100,Test User 0,test0@email.com,USR-T100-T38,2025-02-06,purchase,196.29,Electronics,Test Electronics Item,,,
+USR-T101,Test User 1,test1@email.com,USR-T101-T1,2025-02-10,purchase,108.57,Apparel,Test Apparel Item,,,
+USR-T101,Test User 1,test1@email.com,USR-T101-T2,2025-02-22,return,108.57,Apparel,Test Apparel Item,Changed mind,12,true
+USR-T101,Test User 1,test1@email.com,USR-T101-T3,2025-01-25,purchase,88.29,Apparel,Test Apparel Item,,,
+USR-T101,Test User 1,test1@email.com,USR-T101-T4,2025-02-06,return,88.29,Apparel,Test Apparel Item,Changed mind,12,true
+USR-T101,Test User 1,test1@email.com,USR-T101-T5,2025-02-19,purchase,164.82,Apparel,Test Apparel Item,,,
+USR-T101,Test User 1,test1@email.com,USR-T101-T6,2025-03-01,return,164.82,Apparel,Test Apparel Item,Changed mind,10,true
+USR-T101,Test User 1,test1@email.com,USR-T101-T7,2025-01-23,purchase,214.77,Apparel,Test Apparel Item,,,
+USR-T101,Test User 1,test1@email.com,USR-T101-T8,2025-01-12,purchase,283.73,Apparel,Test Apparel Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T1,2025-01-20,purchase,110.88,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T2,2025-02-06,return,166.32,Home & Kitchen,Test Home & Kitchen Item,Changed mind,17,false
+USR-T102,Test User 2,test2@email.com,USR-T102-T3,2025-01-31,purchase,260.32,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T4,2025-02-20,return,260.32,Home & Kitchen,Test Home & Kitchen Item,Changed mind,20,true
+USR-T102,Test User 2,test2@email.com,USR-T102-T5,2025-02-13,purchase,64.62,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T6,2025-03-05,return,96.93,Home & Kitchen,Test Home & Kitchen Item,Changed mind,20,false
+USR-T102,Test User 2,test2@email.com,USR-T102-T7,2025-02-07,purchase,94.77,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T8,2025-02-23,return,142.16,Home & Kitchen,Test Home & Kitchen Item,Changed mind,16,false
+USR-T102,Test User 2,test2@email.com,USR-T102-T9,2025-01-10,purchase,73.0,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T10,2025-01-24,purchase,201.43,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T11,2025-01-09,purchase,98.45,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T102,Test User 2,test2@email.com,USR-T102-T12,2025-01-03,purchase,172.06,Home & Kitchen,Test Home & Kitchen Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T1,2025-01-17,purchase,78.86,Shoes,Test Shoes Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T2,2025-02-08,return,78.86,Shoes,Test Shoes Item,Changed mind,22,true
+USR-T103,Test User 3,test3@email.com,USR-T103-T3,2025-01-21,purchase,188.79,Sports,Test Sports Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T4,2025-02-19,purchase,246.48,Shoes,Test Shoes Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T5,2025-02-08,purchase,113.5,Shoes,Test Shoes Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T6,2025-01-31,purchase,187.61,Shoes,Test Shoes Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T7,2025-02-15,purchase,284.09,Sports,Test Sports Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T8,2025-01-18,purchase,78.53,Sports,Test Sports Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T9,2025-01-10,purchase,58.76,Shoes,Test Shoes Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T10,2025-01-11,purchase,240.92,Sports,Test Sports Item,,,
+USR-T103,Test User 3,test3@email.com,USR-T103-T11,2025-01-17,purchase,172.43,Sports,Test Sports Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T1,2025-01-31,purchase,218.31,Shoes,Test Shoes Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T2,2025-02-19,return,218.31,Shoes,Test Shoes Item,Changed mind,19,true
+USR-T104,Test User 4,test4@email.com,USR-T104-T3,2025-01-25,purchase,157.48,Shoes,Test Shoes Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T4,2025-02-10,purchase,140.86,Sports,Test Sports Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T5,2025-01-31,purchase,215.45,Sports,Test Sports Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T6,2025-01-18,purchase,184.87,Shoes,Test Shoes Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T7,2025-02-04,purchase,252.35,Sports,Test Sports Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T8,2025-02-09,purchase,191.41,Sports,Test Sports Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T9,2025-02-04,purchase,65.04,Shoes,Test Shoes Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T10,2025-01-17,purchase,131.34,Sports,Test Sports Item,,,
+USR-T104,Test User 4,test4@email.com,USR-T104-T11,2025-01-31,purchase,195.08,Sports,Test Sports Item,,,

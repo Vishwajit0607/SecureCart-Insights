@@ -1,0 +1,257 @@
+/* ─── Settings Page ───────────────────────────────────────────────────────── */
+
+.settings-page {
+    animation: fadeInUp 0.4s ease;
+    position: relative;
+}
+
+.settings-page .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.settings-page .page-title {
+    font-size: 1.4rem;
+    color: var(--text-heading);
+    margin-bottom: 4px;
+}
+
+.settings-page .page-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.settings-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.settings-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid var(--glass-border);
+    font-family: inherit;
+}
+
+.settings-btn.primary {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--accent-red);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.settings-btn.primary:hover {
+    background: rgba(239, 68, 68, 0.25);
+}
+
+.settings-btn.secondary {
+    background: none;
+    color: var(--text-muted);
+}
+
+.settings-btn.secondary:hover {
+    background: var(--bg-hover);
+    color: var(--text-main);
+}
+
+/* ─── Settings Grid ──────────────────────────────────────────────────────── */
+
+.settings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.settings-section {
+    padding: 20px 24px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--accent-cyan);
+}
+
+.section-header h2 {
+    font-size: 1rem;
+    color: var(--text-heading);
+}
+
+/* ─── Setting Rows ───────────────────────────────────────────────────────── */
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.setting-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.setting-info {
+    flex: 1;
+}
+
+.setting-info label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-heading);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.setting-desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.setting-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* ─── Range Sliders ──────────────────────────────────────────────────────── */
+
+.setting-control input[type="range"] {
+    width: 180px;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    outline: none;
+}
+
+.setting-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-red);
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+    transition: box-shadow 0.2s;
+}
+
+.setting-control input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 14px rgba(239, 68, 68, 0.6);
+}
+
+.range-value {
+    font-size: 0.95rem;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+}
+
+/* ─── Toggle Switch ──────────────────────────────────────────────────────── */
+
+.toggle-switch {
+    width: 48px;
+    height: 26px;
+    border-radius: 13px;
+    padding: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+    position: relative;
+}
+
+.toggle-switch.off {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-switch.on {
+    background: var(--accent-emerald);
+}
+
+.toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-switch.on .toggle-thumb {
+    transform: translateX(22px);
+}
+
+/* ─── Select ─────────────────────────────────────────────────────────────── */
+
+.settings-select {
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    font-size: 0.85rem;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.settings-select:focus {
+    border-color: var(--accent-cyan);
+}
+
+.settings-select option {
+    background: var(--bg-sidebar);
+    color: var(--text-main);
+}
+
+/* ─── Save Toast ─────────────────────────────────────────────────────────── */
+
+.save-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--accent-emerald);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+    animation: toastIn 0.3s ease;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+    z-index: 1000;
+}
+
+@keyframes toastIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

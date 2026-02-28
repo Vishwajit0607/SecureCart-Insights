@@ -1,0 +1,214 @@
+/* ─── Alerts Page ─────────────────────────────────────────────────────────── */
+
+.alerts-page {
+    animation: fadeInUp 0.4s ease;
+}
+
+.alerts-page .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.alerts-page .page-title {
+    font-size: 1.4rem;
+    color: var(--text-heading);
+    margin-bottom: 8px;
+}
+
+.alerts-page .page-subtitle {
+    display: flex;
+    gap: 8px;
+}
+
+.alert-count-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.alert-count-badge.critical {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--accent-red);
+}
+
+.alert-count-badge.info {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--accent-cyan);
+}
+
+.alert-filters {
+    display: flex;
+    gap: 6px;
+}
+
+.alert-filters .filter-chip {
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.78rem;
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.alert-filters .filter-chip:hover {
+    border-color: var(--accent-red);
+    color: var(--text-main);
+}
+
+.alert-filters .filter-chip.active {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+    font-weight: 500;
+}
+
+/* ─── Alert Cards ────────────────────────────────────────────────────────── */
+
+.alerts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.alert-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 20px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    animation: fadeInUp 0.4s ease both;
+}
+
+.alert-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.alert-critical {
+    border-left: 3px solid var(--accent-red);
+}
+
+.alert-warning {
+    border-left: 3px solid var(--accent-amber);
+}
+
+.alert-info {
+    border-left: 3px solid var(--accent-cyan);
+}
+
+.alert-status-dismissed {
+    opacity: 0.4;
+}
+
+.alert-status-acknowledged {
+    opacity: 0.7;
+}
+
+.alert-icon-col {
+    padding-top: 2px;
+    flex-shrink: 0;
+}
+
+.alert-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.alert-top-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+}
+
+.alert-id {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.alert-type-badge {
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.alert-type-critical {
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--accent-red);
+}
+
+.alert-type-warning {
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--accent-amber);
+}
+
+.alert-type-info {
+    background: rgba(6, 182, 212, 0.12);
+    color: var(--accent-cyan);
+}
+
+.alert-time {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-left: auto;
+}
+
+.alert-message {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+.alert-message strong {
+    color: var(--text-heading);
+}
+
+/* ─── Alert Action Buttons ───────────────────────────────────────────────── */
+
+.alert-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.alert-action-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--glass-border);
+    background: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+}
+
+.ack-btn:hover {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+    border-color: var(--accent-emerald);
+}
+
+.dismiss-btn:hover {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--accent-red);
+    border-color: var(--accent-red);
+}

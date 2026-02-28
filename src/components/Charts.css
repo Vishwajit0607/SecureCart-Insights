@@ -1,0 +1,68 @@
+/* ─── Charts Container ────────────────────────────────────────────────────── */
+
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.chart-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    backdrop-filter: blur(16px);
+    animation: fadeInUp 0.5s ease both;
+    animation-delay: 0.25s;
+}
+
+.chart-panel.full-width {
+    flex: 1 1 100%;
+}
+
+.chart-panel.half-width {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 360px;
+}
+
+.chart-header {
+    margin-bottom: 16px;
+}
+
+.chart-header h3 {
+    font-size: 1rem;
+    color: var(--text-heading);
+}
+
+.chart-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: block;
+    margin-top: 2px;
+}
+
+.chart-wrapper {
+    width: 100%;
+}
+
+.tier-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Recharts label overrides */
+.recharts-pie-label-text {
+    fill: var(--text-muted) !important;
+    font-size: 0.75rem !important;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .chart-panel.half-width {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}

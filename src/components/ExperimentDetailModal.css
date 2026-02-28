@@ -1,0 +1,218 @@
+/* ─── User Risk Detail Modal ─────────────────────────────────────────────── */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 24px;
+    animation: fadeInUp 0.25s ease;
+}
+
+.modal-content {
+    background: var(--bg-sidebar);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────── */
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-title h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.user-id-badge {
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-muted);
+    border: 1px solid var(--glass-border);
+}
+
+.close-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--accent-red);
+}
+
+/* ─── Body ───────────────────────────────────────────────────────────────── */
+
+.modal-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ─── Metrics Row ────────────────────────────────────────────────────────── */
+
+.metrics-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.metric-box {
+    background: var(--bg-panel);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+
+.metric-icon {
+    color: var(--text-muted);
+    margin-bottom: 2px;
+}
+
+.metric-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.metric-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+/* ─── Explanation Section ────────────────────────────────────────────────── */
+
+.explanation-section {
+    padding: 18px 20px;
+}
+
+.explanation-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.explanation-header h3 {
+    font-size: 0.95rem;
+}
+
+.fraud-type-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--accent-red);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.explanation-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.detected-pattern {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.cluster-tag {
+    font-size: 0.8rem;
+    color: var(--accent-purple);
+    padding: 4px 12px;
+    border-radius: 12px;
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+/* ─── Chart Sections ─────────────────────────────────────────────────────── */
+
+.chart-section {
+    padding: 18px 20px;
+}
+
+.chart-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chart-tag {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 8px;
+    background: rgba(139, 92, 246, 0.12);
+    color: var(--accent-purple);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.chart-description {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.modal-chart-wrapper {
+    margin-top: 8px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .modal-content {
+        max-height: 95vh;
+    }
+
+    .metrics-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

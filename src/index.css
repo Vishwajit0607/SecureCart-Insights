@@ -1,0 +1,160 @@
+/* ─── Design System: Fraud Detection Dashboard ────────────────────────────── */
+:root {
+  /* Background palette */
+  --bg-body: #0a0e17;
+  --bg-sidebar: #0d1220;
+  --bg-panel: rgba(15, 20, 35, 0.85);
+  --bg-card: rgba(20, 28, 50, 0.6);
+  --bg-hover: rgba(255, 255, 255, 0.04);
+
+  /* Glass */
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  /* Accent palette — fraud ops */
+  --accent-red: #ef4444;
+  --accent-amber: #f59e0b;
+  --accent-emerald: #10b981;
+  --accent-purple: #8b5cf6;
+  --accent-cyan: #06b6d4;
+
+  /* Text */
+  --text-main: #e2e8f0;
+  --text-muted: #64748b;
+  --text-heading: #f1f5f9;
+
+  /* Spacing */
+  --sidebar-width: 240px;
+  --header-height: 56px;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ─── Utility Classes ────────────────────────────────────────────────────── */
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.text-critical {
+  color: var(--accent-red) !important;
+}
+
+.text-warning {
+  color: var(--accent-amber) !important;
+}
+
+.text-nominal {
+  color: var(--accent-emerald) !important;
+}
+
+.text-accent {
+  color: var(--accent-cyan) !important;
+}
+
+.text-purple {
+  color: var(--accent-purple) !important;
+}
+
+.text-amber {
+  color: var(--accent-amber) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.text-highlight {
+  color: var(--text-heading);
+  font-weight: 500;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ─── Animations ─────────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
