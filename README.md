@@ -279,12 +279,11 @@ GitHub Repository: To be added
 
 ## 14. Team Roles & Responsibilities  
 
-| Member Name | Role | Responsibilities |
-|-------------|------|------------------|
-| Your Name | ML Engineer | Model development & evaluation |
-| Member 2 | Backend Developer | API & database |
-| Member 3 | Frontend Developer | Dashboard UI |
-| Member 4 | DevOps | Deployment & CI/CD |
+| Member Name            | Role                         | Responsibilities |
+|------------------------|------------------------------|------------------|
+| Shikhar Verma         | Frontend & Backend Developer | Full-stack development, API integration, backend logic implementation |
+| Vishwajit Jayswal     | UI/UX Developer              | Dashboard design, user experience optimization, interface prototyping |
+| Devesh Kumar Gupta    | Researcher                   | Fraud pattern research, feature engineering strategy, model analysis |
 
 ---
 
