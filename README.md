@@ -1,397 +1,321 @@
-# 🛒 Returns Fraud Detection Dashboard
-
-AI-powered, explainable anomaly detection system to identify fraudulent return behavior in e-commerce platforms.
+# 🛒 ReturnShield AI  
+AI-powered, explainable fraud detection dashboard for identifying suspicious return behavior in e-commerce platforms.
 
 ---
 
-## 1. Problem Statement
+## 1. Problem Statement  
 
-### **Problem Title**
+### Problem Title  
+E-commerce Returns Fraud Detection & Explainability System  
 
-E-commerce Returns Fraud Detection & Explainability System
-
-### **Problem Description**
-
+### Problem Description  
 E-commerce platforms face growing financial losses due to fraudulent return behavior. Common patterns include:
 
-* Serial returners
-* Wardrobing (temporary usage before return)
-* Receipt manipulation
-* Abnormal purchase-return timing
+- Serial returners  
+- Wardrobing (temporary usage before return)  
+- Receipt manipulation  
+- Abnormal purchase-return timing  
 
-Manual detection is ineffective due to:
+Manual fraud detection is ineffective due to:
 
-* Large transaction volumes
-* Subtle and evolving fraud strategies
-* High class imbalance (fraud cases are rare)
+- High transaction volumes  
+- Subtle behavioral patterns  
+- Evolving fraud strategies  
+- Highly imbalanced datasets  
 
-Most platforms rely on rigid rule-based systems that fail to adapt to emerging fraud patterns.
+### Target Users
+- Fraud Analysts  
+- Risk Management Teams  
+- E-commerce Operations Teams  
+- Product & Policy Teams  
 
-### **Target Users**
-
-* Fraud Analysts
-* Risk Management Teams
-* E-commerce Operations Teams
-* Product & Policy Teams
-
-### **Existing Gaps**
-
-* No structured, explainable fraud detection framework
-* Lack of interpretable risk scoring
-* High false positive rates
-* Poor anomaly visualization
-* No behavioral clustering insights
+### Existing Gaps
+- No structured, explainable fraud detection system  
+- Static rule-based detection  
+- High false positive rates  
+- Lack of behavioral clustering insights  
 
 ---
 
-## 2. Problem Understanding & Approach
+## 2. Problem Understanding & Approach  
 
-### **Root Cause Analysis**
+### Root Cause Analysis
+- Fraud patterns evolve over time  
+- Rule-based systems fail against adaptive fraud  
+- Imbalanced datasets make detection difficult  
+- Lack of interpretability in existing systems  
 
-* Static rule-based systems fail against adaptive fraud strategies
-* Fraud detection datasets are highly imbalanced
-* Lack of behavioral modeling across multiple transactions
-* No explainability in current detection systems
-
-### **Solution Strategy**
-
+### Solution Strategy
 We propose an AI-driven anomaly detection dashboard that:
 
-* Detects behavioral anomalies
-* Identifies suspicious clusters
-* Assigns interpretable risk scores
-* Explains why a user is flagged
-* Visualizes fraud patterns interactively
+- Detects suspicious behavioral patterns  
+- Assigns interpretable risk scores  
+- Identifies fraud clusters  
+- Provides explanation for flagged users  
 
 ---
 
-## 3. Proposed Solution
+## 3. Proposed Solution  
 
-### **Solution Overview**
-
+### Solution Overview
 An end-to-end Returns Fraud Detection Dashboard that:
 
-* Ingests transaction logs
-* Applies anomaly detection algorithms
-* Generates explainable risk scores
-* Flags high-risk accounts
-* Visualizes fraud clusters
+- Ingests transaction logs  
+- Engineers behavioral features  
+- Applies anomaly detection  
+- Assigns explainable risk scores  
+- Visualizes fraud insights  
 
-### **Core Idea**
+### Core Idea
+Combine anomaly detection + behavioral analytics + explainable AI.
 
-Combine **unsupervised anomaly detection + behavioral feature engineering + explainability layer** to detect evolving fraud patterns.
-
-### **Key Features**
-
-* Serial return detection
-* Wardrobing behavior analysis
-* Purchase-return timing anomaly detection
-* Receipt manipulation flagging
-* Behavioral clustering
-* Interpretable risk scoring
-* Analyst-friendly dashboard
+### Key Features
+- Serial return detection  
+- Wardrobing behavior analysis  
+- Purchase-return timing anomaly detection  
+- Receipt manipulation flagging  
+- Risk scoring engine  
+- Interactive fraud dashboard  
 
 ---
 
-## 4. System Architecture
+## 4. System Architecture  
 
-### **High-Level Flow**
+### High-Level Flow  
+User → Frontend → Backend → ML Model → Database → Response  
 
-User → Frontend → Backend → ML Model → Database → Response
+### Architecture Description
+1. User uploads transaction logs  
+2. Backend processes & engineers features  
+3. ML model detects anomalies  
+4. Risk scoring engine generates interpretable score  
+5. Results stored in database  
+6. Dashboard visualizes fraud insights  
 
-### **Architecture Description**
-
-1. Transaction logs are ingested via API.
-2. Backend processes and engineers behavioral features.
-3. ML model applies anomaly detection.
-4. Risk scoring engine assigns interpretable fraud score.
-5. Results stored in database.
-6. Dashboard visualizes flagged users & explanations.
-
-### **Architecture Diagram**
-
-![Image](https://www.researchgate.net/publication/332049054/figure/fig1/AS%3A1070431385706502%401632222138734/Architecture-of-fraud-detection.jpg)
-
-![Image](https://www.researchgate.net/publication/376523310/figure/fig1/AS%3A11431281212441564%401702652079505/Flow-Diagram-of-Credit-Card-Fraud-Detection-using-Machine-Learning.png)
-
-![Image](https://user-images.githubusercontent.com/105245012/175653909-d7e0cbba-d258-422d-a0f8-2cbebbc77cd6.png)
-
-![Image](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/09/11/ML-17544-image003.png)
+### Architecture Diagram  
+![System Architecture](assets/system-architecture.png)
 
 ---
 
-## 5. Database Design
+## 5. Database Design  
 
-### **ER Diagram**
+### ER Diagram  
+![ER Diagram](assets/er-diagram.png)
 
-![Image](https://www.slideteam.net/media/catalog/product/cache/1280x720/e/n/entity_relationship_diagram_for_ecommerce_website_slide01.jpg)
+### ER Diagram Description
 
-![Image](https://cdn-us-05.visual-paradigm.com/node/on/w/asardbgk/rest/diagrams/shares/diagram/949cb87d-97af-438f-acd2-c9b6d0d6b206/preview?p=1)
+Entities:
+- Users  
+- Orders  
+- Transactions  
+- Returns  
+- Risk Scores  
+- Fraud Flags  
 
-![Image](https://www.researchgate.net/publication/380585898/figure/fig1/AS%3A11431281243946325%401715783082416/ER-Diagram-of-E-commerce.ppm)
-
-![Image](https://svg.template.creately.com/he7cxejx1)
-
-### **ER Diagram Description**
-
-**Entities:**
-
-* Users
-* Orders
-* Transactions
-* Returns
-* Risk Scores
-* Fraud Flags
-
-**Relationships:**
-
-* One user → Many orders
-* One order → One or multiple transactions
-* One order → Zero or one return
-* One user → One risk profile
+Relationships:
+- One User → Many Orders  
+- One Order → One Transaction  
+- One Order → Zero/One Return  
+- One User → One Risk Profile  
 
 ---
 
-## 6. Dataset Selected
+## 6. Dataset Selected  
 
-### **Dataset Name**
+### Dataset Name
+Synthetic E-commerce Transaction & Returns Dataset  
 
-Synthetic E-commerce Transaction & Returns Dataset
+### Source
+- Public datasets (adapted)  
+- Synthetic fraud simulation  
 
-### **Source**
+### Data Type
+- Structured tabular data  
+- Time-series transaction logs  
 
-* Public fraud datasets (adapted)
-* Synthetic generation for return fraud simulation
+### Selection Reason
+- Suitable for anomaly detection  
+- Allows fraud behavior simulation  
+- Supports class imbalance modeling  
 
-### **Data Type**
-
-* Structured tabular data
-* Transaction timestamps
-* User behavior metrics
-
-### **Selection Reason**
-
-* Allows modeling of behavioral fraud
-* Supports anomaly detection techniques
-* Enables class imbalance simulation
-
-### **Preprocessing Steps**
-
-* Missing value handling
-* Feature engineering (return ratio, avg return time, frequency)
-* Normalization
-* Outlier detection
-* Handling class imbalance (SMOTE / resampling)
+### Preprocessing Steps
+- Missing value handling  
+- Feature engineering (return ratio, frequency, avg return time)  
+- Normalization  
+- Outlier detection  
+- Handling class imbalance  
 
 ---
 
-## 7. Model Selected
+## 7. Model Selected  
 
-### **Model Name**
+### Model Name
+Isolation Forest + Risk Scoring Engine  
 
-Isolation Forest + Behavioral Risk Scoring
+### Selection Reasoning
+- Effective for unsupervised anomaly detection  
+- Handles high-dimensional tabular data  
+- Suitable for imbalanced datasets  
 
-### **Selection Reasoning**
+### Alternatives Considered
+- One-Class SVM  
+- Local Outlier Factor  
+- Autoencoders  
+- Random Forest (supervised baseline)  
 
-* Effective for unsupervised anomaly detection
-* Works well with high-dimensional tabular data
-* Suitable for imbalanced datasets
-
-### **Alternatives Considered**
-
-* Local Outlier Factor (LOF)
-* One-Class SVM
-* Autoencoders
-* Random Forest (supervised baseline)
-
-### **Evaluation Metrics**
-
-* Precision
-* Recall
-* F1 Score
-* ROC-AUC
-* False Positive Rate
+### Evaluation Metrics
+- Precision  
+- Recall  
+- F1 Score  
+- ROC-AUC  
+- False Positive Rate  
 
 ---
 
-## 8. Technology Stack
+## 8. Technology Stack  
 
-### **Frontend**
+### Frontend
+- React.js  
+- Chart.js  
 
-* React.js
-* Chart.js / D3.js
+### Backend
+- Python (FastAPI / Flask)  
 
-### **Backend**
+### ML/AI
+- Scikit-learn  
+- Pandas  
+- NumPy  
 
-* Python (FastAPI / Flask)
+### Database
+- PostgreSQL  
 
-### **ML/AI**
-
-* Scikit-learn
-* Pandas
-* NumPy
-
-### **Database**
-
-* PostgreSQL
-
-### **Deployment**
-
-* Docker
-* AWS / Render / Railway
+### Deployment
+- Docker  
+- AWS / Render  
 
 ---
 
-## 9. API Documentation & Testing
+## 9. API Documentation & Testing  
 
-### **API Endpoints List**
+### API Endpoints List
 
-**Endpoint 1:** `/upload-transactions`
-Uploads transaction logs
+1️⃣ Upload Transactions  
+POST /upload-transactions  
 
-**Endpoint 2:** `/analyze-user/{user_id}`
-Returns risk score & explanation
+2️⃣ Analyze User Risk  
+GET /analyze-user/{user_id}  
 
-**Endpoint 3:** `/fraud-dashboard`
-Returns aggregated fraud insights
+3️⃣ Fraud Dashboard Data  
+GET /fraud-dashboard  
 
-### **API Testing Screenshots**
-
-![Image](https://miro.medium.com/v2/resize%3Afit%3A2000/1%2Ah4rVTNmzxsFCqdX4W7eWTA.gif)
-
-![Image](https://www.thunderclient.com/images/thunder-screenshot-v8.png?v=3)
-
-![Image](https://fastapi.tiangolo.com/img/index/index-03-swagger-02.png)
-
-![Image](https://fastapi.tiangolo.com/img/tutorial/metadata/image02.png)
+### API Testing Screenshots  
+![API Testing](assets/api-testing.png)
 
 ---
 
-## 10. Module-wise Development & Deliverables
+## 10. Module-wise Development & Deliverables  
 
-### **Checkpoint 1: Research & Planning**
+### Checkpoint 1: Research & Planning
+- Literature review  
+- Feature engineering plan  
+- Architecture design  
 
-Deliverables:
+### Checkpoint 2: Backend Development
+- API implementation  
+- Database schema  
+- Data ingestion module  
 
-* Literature review
-* Feature design
-* Architecture blueprint
+### Checkpoint 3: Frontend Development
+- Dashboard UI  
+- Risk score visualization  
+- Fraud insights charts  
 
-### **Checkpoint 2: Backend Development**
+### Checkpoint 4: Model Training
+- Feature engineering pipeline  
+- Anomaly detection model  
+- Model evaluation  
 
-Deliverables:
+### Checkpoint 5: Model Integration
+- API-model integration  
+- Risk scoring engine  
+- Explainability layer  
 
-* API implementation
-* Database schema
-* Data ingestion module
-
-### **Checkpoint 3: Frontend Development**
-
-Deliverables:
-
-* Fraud dashboard UI
-* Risk score visualization
-* Behavioral charts
-
-### **Checkpoint 4: Model Training**
-
-Deliverables:
-
-* Feature engineering pipeline
-* Anomaly detection model
-* Evaluation results
-
-### **Checkpoint 5: Model Integration**
-
-Deliverables:
-
-* API-model integration
-* Risk scoring engine
-* Explainability layer
-
-### **Checkpoint 6: Deployment**
-
-Deliverables:
-
-* Dockerized application
-* Cloud deployment
-* Live demo
+### Checkpoint 6: Deployment
+- Dockerized application  
+- Cloud deployment  
+- Live demo  
 
 ---
 
-## 11. End-to-End Workflow
+## 11. End-to-End Workflow  
 
-1. Transaction logs uploaded
-2. Feature engineering
-3. Anomaly detection
-4. Risk scoring
-5. Explainability generation
-6. Dashboard visualization
-7. Analyst decision-making
-
----
-
-## 12. Demo & Video
-
-Live Demo Link: *To be added*
-Demo Video Link: *To be added*
-GitHub Repository: *To be added*
+1. Upload transaction logs  
+2. Feature engineering  
+3. Anomaly detection  
+4. Risk scoring  
+5. Explainability generation  
+6. Dashboard visualization  
+7. Fraud analyst review  
 
 ---
 
-## 13. Hackathon Deliverables Summary
+## 12. Demo & Video  
 
-* Functional fraud detection dashboard
-* Explainable risk scoring system
-* Anomaly detection engine
-* API documentation
-* Deployment-ready application
+Live Demo Link: To be added  
+Demo Video Link: To be added  
+GitHub Repository: To be added  
 
 ---
 
-## 14. Team Roles & Responsibilities
+## 13. Hackathon Deliverables Summary  
 
-| Member Name | Role               | Responsibilities               |
-| ----------- | ------------------ | ------------------------------ |
-| Your Name   | ML Engineer        | Model development & evaluation |
-| Member 2    | Backend Developer  | API & database                 |
-| Member 3    | Frontend Developer | Dashboard UI                   |
-| Member 4    | DevOps             | Deployment & CI/CD             |
-
----
-
-## 15. Future Scope & Scalability
-
-### **Short-Term**
-
-* Real-time fraud detection
-* Advanced visualization
-* Policy optimization module
-
-### **Long-Term**
-
-* Deep learning anomaly models
-* Graph-based fraud detection
-* Cross-platform fraud sharing
-* Adaptive learning models
+- Functional fraud detection dashboard  
+- Explainable AI risk scoring system  
+- Anomaly detection engine  
+- API documentation  
+- Deployment-ready system  
 
 ---
 
-## 16. Known Limitations
+## 14. Team Roles & Responsibilities  
 
-* Synthetic dataset limitations
-* Cold-start user problem
-* Potential false positives
-* Requires periodic retraining
+| Member Name | Role | Responsibilities |
+|-------------|------|------------------|
+| Your Name | ML Engineer | Model development & evaluation |
+| Member 2 | Backend Developer | API & database |
+| Member 3 | Frontend Developer | Dashboard UI |
+| Member 4 | DevOps | Deployment & CI/CD |
 
 ---
 
-## 17. Impact
+## 15. Future Scope & Scalability  
 
-* Reduced financial losses
-* Improved fraud detection accuracy
-* Lower false positives
-* Increased trust in return policies
-* Data-driven fraud management
+### Short-Term
+- Real-time fraud detection  
+- Advanced dashboard filters  
+- Policy optimization insights  
 
+### Long-Term
+- Graph-based fraud detection  
+- Deep learning anomaly models  
+- Adaptive learning systems  
+- Cross-platform fraud intelligence  
 
+---
+
+## 16. Known Limitations  
+
+- Synthetic dataset limitations  
+- Cold-start user problem  
+- Possible false positives  
+- Requires periodic retraining  
+
+---
+
+## 17. Impact  
+
+- Reduced financial losses  
+- Improved fraud detection accuracy  
+- Lower false positives  
+- Increased trust in return policies  
+- Data-driven fraud management  
